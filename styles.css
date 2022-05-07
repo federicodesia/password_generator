@@ -1,0 +1,120 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12.5px;
+    color: white;
+}
+
+span, p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+body{
+    background-color: #282A37;
+    margin: 0;
+}
+
+.main-container{
+    height: 100vh;
+    width: 100vw;
+}
+
+.content-container{
+    background-color: #282A37;
+    padding: 24px;
+}
+
+h1{
+    font-size: 20px;
+    margin-bottom: 24px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.password-container{
+    display: flex;
+    flex-direction: row;
+}
+
+button{
+    background-color: #323645;
+    border: none;
+    border-radius: 16px;
+    height: 48px;
+    width: 48px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+button p{
+    display: none;
+}
+
+@media only screen and (min-width: 481px) {
+    body{
+        background-color: #525461;
+    }
+
+    .main-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-container{
+        margin: 24px;
+        border-radius: 12px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;   
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .password-container{
+        flex-direction: column;
+    }
+
+    .button-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 12px;
+    }
+
+    button{
+        width: calc(50% - 6px);
+        margin-left: 0;
+        padding: 0px 32px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+        align-items: center;
+    }
+
+    button p{
+        display: inline-block;
+        margin-left: 8px;
+    }
+}
+
+.password-input-wrapper{
+    display: flex;
+    align-items: center;
+    background-color: #323645;
+    border-radius: 16px;
+    height: 48px;
+    padding: 0px 24px;
+
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.input-suffix{
+    position: relative;
+    white-space: nowrap;
+    padding-left: 16px;
+}

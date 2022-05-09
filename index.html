@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="switch.css">
+    
 </head>
 <body>
     <div class="main-container">
@@ -42,10 +44,34 @@
 
             <h2 class="password-settings">Password settings</h2>
             <div class="settings-container">
-                <div class="row">
+                <div class="settings-row">
                     <span>Length:</span>
                     <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
                     20
+                </div>
+
+                <div class="settings-row switch">
+                    Uppercase (ABC):
+                    <input type="checkbox" id="uppercase-switch" checked/>
+                    <label for="uppercase-switch"></label>
+                </div>
+                
+                <div class="settings-row switch">
+                    Lowercase (abc):
+                    <input type="checkbox" id="lowercase-switch" checked/>
+                    <label for="lowercase-switch"></label>
+                </div>
+                
+                <div class="settings-row switch">
+                    Digits (123):
+                    <input type="checkbox" id="digits-switch" checked/>
+                    <label for="digits-switch"></label>
+                </div>
+                
+                <div class="settings-row switch">
+                    Symbols (#$&):
+                    <input type="checkbox" id="symbols-switch"/>
+                    <label for="symbols-switch"></label>
                 </div>
             </div>
         </div>

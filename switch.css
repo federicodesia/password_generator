@@ -1,0 +1,47 @@
+.switch{
+	display: flex;
+}
+
+.switch input{
+	height: 0;
+	width: 0;
+	opacity: 0;
+}
+
+.switch label {
+	background: #555B69;
+	border-radius: 22px;
+	height: 22px;
+	width: 40px;
+	cursor: pointer;
+
+	display: block;
+	position: relative;
+
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+
+.switch label:after {
+	background-color: white;
+	border-radius: 50%;
+	height: 14px;
+	width: 14px;
+
+	content: "";
+	position: absolute;
+	top: 4px;
+	left: 4px;
+
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+
+.switch input:checked + label {
+	background: #1D90F5;
+}
+
+.switch input:checked + label:after {
+	left: calc(100% - 4px);
+	transform: translateX(-100%);
+}

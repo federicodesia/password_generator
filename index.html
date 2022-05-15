@@ -12,7 +12,6 @@
     
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="switch.css">
-    
 </head>
 <body>
     <div class="main-container">
@@ -21,21 +20,21 @@
         
             <div class="password-container">
                 <div class="password-input-wrapper">
-                    <span class="password-input">pvGhSaQLxvGhSafVeazY</span>
-                    <p class="input-suffix">Very strong</p>
+                    <span class="password-input" id="password-input"></span>
+                    <p class="input-suffix" id="password-security-level"></p>
                 </div>
 
                 <div class="security-container">
                     <span>Password security: </span>
-                    <span class="password-security">Very strong</span>
+                    <span class="password-security" id="password-security-level"></span>
                 </div>
         
                 <div class="button-container">
-                    <button>
+                    <button id="generate-new-button">
                         <i class="fa-solid fa-rotate-right"></i>
                         <p>Generate new</p>
                     </button>
-                    <button>
+                    <button id="copy-to-clipboard-button">
                         <i class="fa-regular fa-clipboard"></i>
                         <p>Copy to clipboard</p>
                     </button>
@@ -43,11 +42,11 @@
             </div>
 
             <h2 class="password-settings">Password settings</h2>
-            <div class="settings-container">
+            <div class="settings-container" id="settings">
                 <div class="settings-row">
                     <span>Length:</span>
-                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-                    20
+                    <input type="range" class="slider" id="length-slider" min="4" max="40" value="16">
+                    <label id="length-slider-value">16</label>
                 </div>
 
                 <div class="settings-row switch">
@@ -77,6 +76,7 @@
         </div>
     </div>
 
+    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/81176067df.js" crossorigin="anonymous"></script>
 </body>
 </html>

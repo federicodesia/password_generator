@@ -74,13 +74,11 @@ button p{
     padding: 0px 12px;
 }
 
-/*
-=========================================
+/*=========================================
         Desktop & Tablet media query
-=========================================
-*/
+=========================================*/
 
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 531px) {
     body{
         background-color: #525461;
     }
@@ -95,15 +93,13 @@ button p{
         margin: 24px;
         border-radius: 12px;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;   
-        width: 500px;
+        width: 580px;
     }
 }
 
-/*
-=========================================
+/*=========================================
             Tablet media query
-=========================================
-*/
+=========================================*/
 
 @media only screen and (max-width: 800px) {
     .password-container{
@@ -135,13 +131,11 @@ button p{
     }
 }
 
-/*
-=========================================
+/*=========================================
             Mobile media query
-=========================================
-*/
+=========================================*/
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 530px) {
     .button-container{
         display: flex;
         flex-direction: column;
@@ -197,6 +191,15 @@ button p{
     height: 38px;
 }
 
+.settings-row .span{
+    text-overflow: clip; 
+}
+
+#length-slider-value{
+    width: 16px;
+    text-align: right;
+}
+
 .slider {
     -webkit-appearance: none;
     background: #555B69;
@@ -204,6 +207,7 @@ button p{
     height: 8px;
     margin: 0px 16px;
     flex-grow: 1;
+    min-width: 0px;
 }
 
 .slider::-webkit-slider-thumb {
